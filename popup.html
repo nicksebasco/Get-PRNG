@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #container{
+        width: 200px;
+        height: 100px;
+      }
+      .c{
+        color: purple;
+        font-family: fantasy;
+      }
+      #setTime{
+        width:100%;
+      }
+      #b1{
+        height: 20px;
+        width: 100%;
+      }
+      #b2{
+        height: 20px;
+        width: 100%;
+      }
+    </style>
+    <script src = "popup.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <div class="c">
+        random integer:<span id="ri"><span>
+      </div>
+      <div class="c">
+        random decimal:<span id="rd"><span>
+      </div>
+      <div class="c">
+        <input type="text" id="setTime" placeholder="Enter a time to update randomness">
+        <button id="b1">Set Time</button>
+      </div>
+      <div class="c">
+        <button id="b2">Calculate Values</button>
+      </div>
+    </div>
+  </body>
+</html>

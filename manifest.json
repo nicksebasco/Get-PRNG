@@ -1,0 +1,26 @@
+{
+  "name": "Capture PRNG",
+  "version": "1.0",
+  "description": "Get the prng from an html page",
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["script.js"]
+  }],
+
+ "browser_action": {
+  "default_icon": "prng.png",
+  "default_popup": "popup.html"
+},
+
+  "permissions": [
+     "activeTab",
+     "tabs"
+],
+
+  "manifest_version": 2
+}
