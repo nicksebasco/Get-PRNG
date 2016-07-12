@@ -12,7 +12,7 @@ window.onload = function(){
       clearTimeout(timer);
     }
     timer = setTimeout(function(){
-      document.getElementById('ri').innerHTML = ' '+Math.floor(rand()*10);
+      document.getElementById('ri').innerHTML = ' '+Math.floor(( rand()||0 )*10);
       document.getElementById('rd').innerHTML = ' '+rand();
     },time);
     return;
