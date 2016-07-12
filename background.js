@@ -6,6 +6,6 @@ chrome.runtime.onMessage.addListener(function(message){
     chrome.runtime.sendMessage({method:"updateRand",func: message.message});
   }
   else{
-    alert("Fuck I don't work.");
+    alert("I don't work.");
   }
 });
